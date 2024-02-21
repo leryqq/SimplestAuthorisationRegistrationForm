@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivUserAvatarSign"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/money" />
+
+    <Button
+        android:id="@+id/btnShowAvatar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@color/purple_200"
+        android:onClick="onClickShowAvatar"
+        android:padding="6dp"
+        android:text="@string/avatar"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/edLogin"
+        app:layout_constraintStart_toStartOf="@+id/edLogin"
+        app:layout_constraintTop_toBottomOf="@+id/ivUserAvatarSign" />
+
+    <EditText
+        android:id="@+id/edLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/login"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/ivUserAvatarSign"
+        app:layout_constraintStart_toStartOf="@+id/ivUserAvatarSign"
+        app:layout_constraintTop_toBottomOf="@+id/btnShowAvatar" />
+
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/edLogin"
+        app:layout_constraintStart_toStartOf="@+id/edLogin"
+        app:layout_constraintTop_toBottomOf="@+id/edLogin" />
+
+    <EditText
+        android:id="@+id/edSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/surname"
+        android:inputType="text"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/edPassword"
+        app:layout_constraintStart_toStartOf="@+id/edPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edPassword" />
+
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/edSurname"
+        app:layout_constraintStart_toStartOf="@+id/edSurname"
+        app:layout_constraintTop_toBottomOf="@+id/edSurname" />
+
+    <EditText
+        android:id="@+id/edMiddleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/middle_name"
+        android:inputType="text"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/edName"
+        app:layout_constraintStart_toStartOf="@+id/edName"
+        app:layout_constraintTop_toBottomOf="@+id/edName" />
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/purple_200"
+        android:onClick="onClickDone"
+        android:text="@string/done"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/edPassword"
+        app:layout_constraintStart_toStartOf="@+id/edPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edMiddleName" />
+</androidx.constraintlayout.widget.ConstraintLayout>

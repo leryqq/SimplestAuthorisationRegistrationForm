@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">recipebook_final</string>
+    <string name="salary">Salary</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="surname">Surname</string>
+    <string name="name">Name</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="sign_in" translatable="false">Sign in</string>
+    <string name="sign_up" translatable="false">Sign up</string>
+    <string name="avatar" translatable="false">Show Avatar</string>
+    <string name="done">Done</string>
+</resources>
